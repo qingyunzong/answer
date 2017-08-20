@@ -1,6 +1,6 @@
 package com.poi.answer.dao;
 
-import com.poi.answer.bo.User;
+import com.poi.answer.bo.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -10,5 +10,6 @@ import java.util.List;
  */
 @Mapper
 public interface UserDao {
-    public List<User> searchAll();
+    public List<SysUser> searchAll();
+    public SysUser findByUserName(String userName);
 }
