@@ -5,7 +5,7 @@
         SELECT * from sys_permission ;
     </select>
 
-    <select id="findByAdminUserId" parameterType="long" resultType="com.us.example.domain.Permission">
+    <select id="findByAdminUserId" parameterType="long" resultType="com.poi.answer.bo.Permission">
         select p.*
         from Sys_User u
         LEFT JOIN sys_user_role sru on u.id= sru.User_id
